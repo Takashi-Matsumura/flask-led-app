@@ -32,6 +32,14 @@ source venv/bin/activate  # bash/zsh の場合
 pip install flask requests
 ```
 
+## Pico W の準備
+
+1. `main.py` を VSCode の MicroPico 拡張で Pico W に転送
+2. Wi-Fi の SSID / パスワード を書き換えて保存
+3. 実行後、シリアルモニタで IP アドレスを確認
+
+※実行するとターミナルに Pico W の IP アドレスが表示されます。次の flask_webapp.py で必要になります。
+
 ## アプリケーションの起動
 
 ### 1. Pico W の IP アドレスを `flask_webapp.py` 内で設定
@@ -48,12 +56,6 @@ python flask_webapp.py
 
 ブラウザで [http://localhost:5002](http://localhost:5002) を開きます。  
 ON / OFF ボタンで Pico W の LED が切り替わります。
-
-## Pico W 側の準備
-
-1. `main.py` を VSCode の MicroPico 拡張で Pico W に転送
-2. Wi-Fi の SSID / パスワード を書き換えて保存
-3. 実行後、シリアルモニタで IP アドレスを確認
 
 ## 補足情報
 
