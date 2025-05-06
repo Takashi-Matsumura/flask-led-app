@@ -1,0 +1,22 @@
+# Python関連
+__pycache__/
+*.pyc
+*.pyo
+
+# 仮想環境
+venv/
+.env/
+
+# 環境設定ファイル
+*.env
+*.DS_Store
+
+# IDE/エディタ関連
+.vscode/
+.idea/
+
+# ログファイル
+*.log
+
+# Docker関連
+*.pid
